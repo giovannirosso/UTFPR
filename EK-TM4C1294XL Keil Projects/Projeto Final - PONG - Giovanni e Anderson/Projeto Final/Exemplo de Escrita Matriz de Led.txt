@@ -1,0 +1,63 @@
+//		writeSPI_dado(~(0xEA77));	//Dado
+//		writeSPI_linha((0x8000));	//LINHA 1
+//		SysTick_Wait1ms(1);
+//			
+//		writeSPI_dado(~(0x8A24));	//Dado
+//		writeSPI_linha((0x4000));	//LINHA 2
+//		SysTick_Wait1ms(1);
+//			
+//		writeSPI_dado(~(0xCA26));	//Dado
+//		writeSPI_linha((0x2000));	//LINHA 3
+//		SysTick_Wait1ms(1);
+//			
+//		writeSPI_dado(~(0x8A24));	//Dado
+//		writeSPI_linha((0x1000));	//LINHA 4
+//		SysTick_Wait1ms(1);
+//			
+//		writeSPI_dado(~(0xEE27));	//Dado
+//		writeSPI_linha((0x0800));	//LINHA 5
+//		SysTick_Wait1ms(1);
+//			
+//		writeSPI_dado(~(0x0000));	//Dado
+//		writeSPI_linha((0x0400));	//LINHA 6
+//		SysTick_Wait1ms(1);
+//		
+//		writeSPI_dado(~(0x0000));	//Dado
+//		writeSPI_linha((0x0200));	//LINHA 7
+//		SysTick_Wait1ms(1);
+//		
+//		writeSPI_dado(~(0xEC6E));	//Dado
+//		writeSPI_linha((0x0100));	//LINHA 8
+//		SysTick_Wait1ms(1);
+//		
+//		writeSPI_dado(~(0xAAAA));	//Dado
+//		writeSPI_linha((0x0080));	//LINHA 9
+//		SysTick_Wait1ms(1);
+//		
+//		writeSPI_dado(~(0xA92A));	//Dado
+//		writeSPI_linha((0x0040));	//LINHA 10
+//		SysTick_Wait1ms(1);
+//		
+//		writeSPI_dado(~(0xE82A));	//Dado
+//		writeSPI_linha((0x0020));	//LINHA 11
+//		SysTick_Wait1ms(1);
+//		
+//		writeSPI_dado(~(0xA82A));	//Dado
+//		writeSPI_linha((0x0010));	//LINHA 12
+//		SysTick_Wait1ms(1);
+//		
+//		writeSPI_dado(~(0xA82E));	//Dado
+//		writeSPI_linha((0x0008));	//LINHA 13
+//		SysTick_Wait1ms(1);
+//		
+//		writeSPI_dado(~(0x0000));	//Dado
+//		writeSPI_linha((0x0004));	//LINHA 14
+//		SysTick_Wait1ms(1);
+//		
+//		writeSPI_dado(~(0x0000));	//Dado
+//		writeSPI_linha((0x0002));	//LINHA 15
+//		SysTick_Wait1ms(1);
+//		
+//		writeSPI_dado(~(0x0000));	//Dado
+//		writeSPI_linha((0x0001));	//LINHA 16
+//		SysTick_Wait1ms(1);
