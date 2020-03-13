@@ -9,6 +9,7 @@
 uint8_t LED_D4 = 0;
 
 void main(){
+  
   SysTickPeriodSet(24000000); // f = 1Hz para clock = 24MHz
   
   SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF); // Habilita GPIO F (LED D4 = PF0)

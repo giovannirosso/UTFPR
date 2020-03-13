@@ -12,6 +12,8 @@ C:\Users\Giovanni_PC\Documents\UTFPR\EK-TM4C1294_IAR8\Projects\Giovanni_Eric_Lab
 -I
 C:\Users\Eric Schidt\Desktop\Uni\8o periodo\Sistemas Embarcados\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178
 -I
+C:\Users\Giovanni_PC\Documents\UTFPR\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178
+-I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\DSP\Include
@@ -21,6 +23,8 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c
 -I
 C:\Users\Eric Schidt\Desktop\Uni\8o periodo\Sistemas Embarcados\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178
+-I
+C:\Users\Giovanni_PC\Documents\UTFPR\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include
 -I

@@ -1,4 +1,4 @@
-"C:\Users\Giovanni_PC\Documents\UTFPR\EK-TM4C1294_IAR8\Projects\template\system_TM4C1294_TW.c"
+"C:\Users\Giovanni_PC\Documents\UTFPR\EK-TM4C1294_IAR8\Projects\Giovanni_Eric_Lab1\src\system_TM4C1294_TW.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
@@ -8,9 +8,11 @@ C:\Users\Giovanni_PC\Documents\UTFPR\EK-TM4C1294_IAR8\Projects\Giovanni_Eric_Lab
 -o
 system_TM4C1294_TW.pbi
 -I
-C:\Users\Giovanni_PC\Documents\UTFPR\EK-TM4C1294_IAR8\Projects\template
+C:\Users\Giovanni_PC\Documents\UTFPR\EK-TM4C1294_IAR8\Projects\Giovanni_Eric_Lab1\src
 -I
 C:\Users\Eric Schidt\Desktop\Uni\8o periodo\Sistemas Embarcados\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178
+-I
+C:\Users\Giovanni_PC\Documents\UTFPR\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include
 -I
@@ -21,6 +23,8 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c
 -I
 C:\Users\Eric Schidt\Desktop\Uni\8o periodo\Sistemas Embarcados\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178
+-I
+C:\Users\Giovanni_PC\Documents\UTFPR\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include
 -I
