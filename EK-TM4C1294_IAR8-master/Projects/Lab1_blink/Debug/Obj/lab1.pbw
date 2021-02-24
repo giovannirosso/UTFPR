@@ -12471,7 +12471,7 @@
     "display": "LED_D4",
     "location": {
       "column": "9",
-      "line": "10",
+      "line": "13",
       "path": "C:\\Users\\giova\\Desktop\\UTFPR\\EK-TM4C1294_IAR8-master\\Projects\\Lab1_blink\\src\\main.c"
     },
     "name": "LED_D4",
@@ -12479,13 +12479,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@258@macro@_24MHZ",
+    "ID": "c:main.c@395@macro@_24MHZ",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "_24MHZ",
     "location": {
       "column": "9",
-      "line": "11",
+      "line": "14",
       "path": "C:\\Users\\giova\\Desktop\\UTFPR\\EK-TM4C1294_IAR8-master\\Projects\\Lab1_blink\\src\\main.c"
     },
     "name": "_24MHZ",
@@ -12493,13 +12493,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@283@macro@_120MHZ",
+    "ID": "c:main.c@420@macro@_120MHZ",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "_120MHZ",
     "location": {
       "column": "9",
-      "line": "12",
+      "line": "15",
       "path": "C:\\Users\\giova\\Desktop\\UTFPR\\EK-TM4C1294_IAR8-master\\Projects\\Lab1_blink\\src\\main.c"
     },
     "name": "_120MHZ",
@@ -12513,7 +12513,7 @@
     "display": "void main(void)",
     "location": {
       "column": "6",
-      "line": "14",
+      "line": "17",
       "path": "C:\\Users\\giova\\Desktop\\UTFPR\\EK-TM4C1294_IAR8-master\\Projects\\Lab1_blink\\src\\main.c"
     },
     "name": "main",
@@ -12521,13 +12521,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@324@F@main@clock",
+    "ID": "c:main.c@461@F@main@clock",
     "What": "Variable",
     "defdec": "Def",
     "display": "clock",
     "location": {
       "column": "12",
-      "line": "17",
+      "line": "20",
       "path": "C:\\Users\\giova\\Desktop\\UTFPR\\EK-TM4C1294_IAR8-master\\Projects\\Lab1_blink\\src\\main.c"
     },
     "name": "clock",

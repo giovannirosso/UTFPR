@@ -1,4 +1,7 @@
 //Giovanni de Rosso Unruh
+//RA 1188232
+//23 de Fevereiro de 2021
+//Pisca led de 1 segundo através de laços, verificando diferença de 120MHz e 24MHz de clock
 #include <stdint.h>
 #include <stdbool.h>
 // includes da biblioteca driverlib
@@ -31,8 +34,12 @@ void main()
     // for (int i = 0; i < 3000000; i++)        //feito no for
     // {
     // }
-    SysCtlDelay(8000000); //SysCtlDelay:
-                          //1/24MHz = 41,67nS, 41,67*3= 125nS. 125nS*8.000.000 = 1 seconds
+    SysCtlDelay(8000000); //SysCtlDelay:    Para 24Mhz
+                          // 1/24MHz = 41,67nS, 41,67*3Instruçoes = 125nS por loop então 125nS*8.000.000 = 1 seconds
+                          //
+                          // PARA 120MHZ
+                          // 1/120MHz = 8,33nS, 8,33*3Instruçoes = 25nS por loop então 25nS*8.000.000 = 0,2 segundos
+                          // OU SEJA para um clock de 120MHz e led ira piscar 5 vezes mais rapido
     GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, LED_D4);
     if (LED_D4 == 0)
     {
