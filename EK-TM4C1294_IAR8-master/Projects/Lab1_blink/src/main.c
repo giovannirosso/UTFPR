@@ -49,6 +49,7 @@ void main()
     {
       LED_D4 = 0;
     }
-    //for(int i=0;i<12000000;i++){}
+    // Mundando o nivel de otimização utilizando o "for" focando em velocidade o led acaba ficando sempre ativo pois a otimização remove o loop "inutil"
+    // Ja ao utilizar a função SysCtlDelay não houveram mudanças pois a função consiste de 3 instruçoes em assembly e dessa forma não há o que otimizar
   }
 }
