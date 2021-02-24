@@ -14,7 +14,6 @@ uint8_t LED_D4 = 0;
 void main()
 {
 
-  // SysTickPeriodSet(24000000); // f = 1Hz para clock = 24MHz
   uint32_t clock = SysCtlClockFreqSet(SYSCTL_OSC_MAIN | SYSCTL_USE_PLL | SYSCTL_CFG_VCO_480 | SYSCTL_XTAL_25MHZ, _24MHZ); //24MHz
   // uint32_t clock = SysCtlClockFreqSet(SYSCTL_OSC_MAIN | SYSCTL_USE_PLL | SYSCTL_CFG_VCO_480 | SYSCTL_XTAL_25MHZ, _120MHZ); //120MHz
 
@@ -29,9 +28,11 @@ void main()
   while (1)
   {
 
-    for (int i = 0; i < 3000000; i++)
-    {
-    }
+    // for (int i = 0; i < 3000000; i++)        //feito no for
+    // {
+    // }
+    SysCtlDelay(8000000); //SysCtlDelay:
+                          //1/24MHz = 41,67nS, 41,67*3= 125nS. 125nS*8.000.000 = 1 seconds
     GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, LED_D4);
     if (LED_D4 == 0)
     {

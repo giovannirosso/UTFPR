@@ -4,14 +4,7 @@
     <fileChecksum>1374525414</fileChecksum>
     <configuration>
         <name>Debug</name>
-        <outputs>
-            <file>$PROJ_DIR$\..\..\TivaWare_C_Series-2.1.4.178\driverlib\ewarm\Exe\driverlib.a</file>
-            <file>$PROJ_DIR$\..\drivers\cfaf128x128x16.c</file>
-            <file>$PROJ_DIR$\..\..\TivaWare_C_Series-2.1.4.178\grlib\ewarm\Exe\grlib.a</file>
-            <file>$PROJ_DIR$\src\simple_display.c</file>
-            <file>$PROJ_DIR$\src\system_TM4C1294_TW.c</file>
-            <file>$PROJ_DIR$\src\startup_TM4C1294.s</file>
-        </outputs>
+        <outputs />
         <forcedrebuild>
             <name>[REBUILD_ALL]</name>
         </forcedrebuild>

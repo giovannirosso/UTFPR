@@ -12521,30 +12521,16 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@388@F@main@clock",
+    "ID": "c:main.c@324@F@main@clock",
     "What": "Variable",
     "defdec": "Def",
     "display": "clock",
     "location": {
       "column": "12",
-      "line": "18",
+      "line": "17",
       "path": "C:\\Users\\giova\\Desktop\\UTFPR\\EK-TM4C1294_IAR8-master\\Projects\\Lab1_blink\\src\\main.c"
     },
     "name": "clock",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@1108@F@main@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "14",
-      "line": "32",
-      "path": "C:\\Users\\giova\\Desktop\\UTFPR\\EK-TM4C1294_IAR8-master\\Projects\\Lab1_blink\\src\\main.c"
-    },
-    "name": "i",
     "origin": "project_file",
     "scope": null
   },
