@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\giova\Desktop\UTFPR\EK-TM4C1294_IAR8-master\Projects\Lab1_blink\settings\lab1.Debug.general.xcl" --backend -f "C:\Users\giova\Desktop\UTFPR\EK-TM4C1294_IAR8-master\Projects\Lab1_blink\settings\lab1.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\giova\Desktop\Repos\UTFPR\EK-TM4C1294_IAR8-master\Projects\Lab1_blink\settings\lab1.Debug.general.xcl" --backend -f "C:\Users\giova\Desktop\Repos\UTFPR\EK-TM4C1294_IAR8-master\Projects\Lab1_blink\settings\lab1.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\giova\Desktop\UTFPR\EK-TM4C1294_IAR8-master\Projects\Lab1_blink\settings\lab1.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\giova\Desktop\UTFPR\EK-TM4C1294_IAR8-master\Projects\Lab1_blink\settings\lab1.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\giova\Desktop\Repos\UTFPR\EK-TM4C1294_IAR8-master\Projects\Lab1_blink\settings\lab1.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\giova\Desktop\Repos\UTFPR\EK-TM4C1294_IAR8-master\Projects\Lab1_blink\settings\lab1.Debug.driver.xcl" 
 }
