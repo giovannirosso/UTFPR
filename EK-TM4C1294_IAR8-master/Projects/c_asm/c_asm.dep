@@ -5,31 +5,24 @@
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\Debug\Obj\startup_ARMCM4.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\c_code.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\asm_code.o</file>
-            <file>$PROJ_DIR$\src\system_ARMCM4.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\system_ARMCM4.__cstat.et</file>
             <file>$PROJ_DIR$\src\asm_code.s</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_ARMCM4.__cstat.et</file>
+            <file>$PROJ_DIR$\src\system_ARMCM4.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\c_code.o</file>
             <file>$PROJ_DIR$\src\c_code.c</file>
             <file>$PROJ_DIR$\src\startup_ARMCM4.s</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_ARMCM4.o</file>
             <file>$PROJ_DIR$\Debug\Exe\c_asm.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\c_code.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_ARMCM4.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\asm_code.o</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 8</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\src\system_ARMCM4.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 4</file>
+                    <file> 7</file>
                 </tool>
             </outputs>
         </file>
@@ -38,12 +31,12 @@
             <outputs>
                 <tool>
                     <name>AARM</name>
-                    <file> 2</file>
+                    <file> 10</file>
                 </tool>
             </outputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\src\c_code.c</name>
+            <name>$PROJ_DIR$\src\system_ARMCM4.c</name>
             <outputs>
                 <tool>
                     <name>__cstat</name>
@@ -52,11 +45,20 @@
             </outputs>
         </file>
         <file>
+            <name>$PROJ_DIR$\src\c_code.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 8</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
             <name>$PROJ_DIR$\src\startup_ARMCM4.s</name>
             <outputs>
                 <tool>
                     <name>AARM</name>
-                    <file> 0</file>
+                    <file> 6</file>
                 </tool>
             </outputs>
         </file>

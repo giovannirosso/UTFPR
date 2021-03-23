@@ -173,6 +173,10 @@
             <name>$PROJ_DIR$\src\tarefas.c</name>
             <outputs>
                 <tool>
+                    <name>ICCARM</name>
+                    <file> 12</file>
+                </tool>
+                <tool>
                     <name>__cstat</name>
                     <file> 15</file>
                 </tool>
