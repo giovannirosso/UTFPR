@@ -22,20 +22,19 @@
  *
  ******************************************************************************/
 
-
 #ifndef SYSTEM_TM4C1294_H
 #define SYSTEM_TM4C1294_H
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
 #include <stdint.h>
 
-extern uint32_t SystemCoreClock;     /* System Core Clock Frequency */
+    extern uint32_t SystemCoreClock; /* System Core Clock Frequency */
 
-
-/**
+    /**
  * Initialize the system
  *
  * @param  none
@@ -44,9 +43,9 @@ extern uint32_t SystemCoreClock;     /* System Core Clock Frequency */
  * @brief  Setup the microcontroller system.
  *         Initialize the System and update the SystemCoreClock variable.
  */
-extern void SystemInit (void);
+    extern void SystemInit(void);
 
-/**
+    /**
  * Update SystemCoreClock variable
  *
  * @param  none
@@ -55,7 +54,7 @@ extern void SystemInit (void);
  * @brief  Updates the SystemCoreClock with current core Clock
  *         retrieved from cpu registers.
  */
-extern void SystemCoreClockUpdate (void);
+    extern void SystemCoreClockUpdate(void);
 
 #ifdef __cplusplus
 }
