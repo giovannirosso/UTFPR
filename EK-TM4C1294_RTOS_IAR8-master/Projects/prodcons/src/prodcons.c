@@ -1,62 +1,82 @@
+//GIOVANNI DE ROSSO UNRUH
+
 #include "system_tm4c1294.h" // CMSIS-Core
-#include "driverleds.h" // device drivers
-#include "cmsis_os2.h" // CMSIS-RTOS
+#include "driverleds.h"      // device drivers
+#include "cmsis_os2.h"       // CMSIS-RTOS
+#include "stdbool.h"
+#include "inc/hw_memmap.h"
+#include "driverlib/sysctl.h"
+#include "driverlib/gpio.h"
+#include "driverlib/interrupt.h"
 
 #define BUFFER_SIZE 8
 
-osThreadId_t produtor_id, consumidor_id;
-osSemaphoreId_t vazio_id, cheio_id;
-uint8_t buffer[BUFFER_SIZE];
+osThreadId_t ledThread;
+osSemaphoreId_t ledSemaphore;
 
-void produtor(void *arg){
-  uint8_t index_i = 0, count = 0;
-  
-  while(1){
-    osSemaphoreAcquire(vazio_id, osWaitForever); // h· espaÁo disponÌvel?
-    buffer[index_i] = count; // coloca no buffer
-    osSemaphoreRelease(cheio_id); // sinaliza um espaÁo a menos
-    
-    index_i++; // incrementa Ìndice de colocaÁ„o no buffer
-    if(index_i >= BUFFER_SIZE)
-      index_i = 0;
-    
+void ledHandler(void *arg)
+{
+  uint8_t count = 0;
+
+  while (1)
+  {
+    osSemaphoreAcquire(ledSemaphore, osWaitForever);
+
+    if (count >= 16)
+      count = 0;
     count++;
-    count &= 0x0F; // produz nova informaÁ„o
-    osDelay(500);
-  } // while
-} // produtor
 
-void consumidor(void *arg){
-  uint8_t index_o = 0, state;
-  
-  while(1){
-    osSemaphoreAcquire(cheio_id, osWaitForever); // h· dado disponÌvel?
-    state = buffer[index_o]; // retira do buffer
-    osSemaphoreRelease(vazio_id); // sinaliza um espaÁo a mais
-    
-    index_o++;
-    if(index_o >= BUFFER_SIZE) // incrementa Ìndice de retirada do buffer
-      index_o = 0;
-    
-    LEDWrite(LED4 | LED3 | LED2 | LED1, state); // apresenta informaÁ„o consumida
-    osDelay(500);
-  } // while
-} // consumidor
+    LEDWrite(LED4 | LED3 | LED2 | LED1, count & 0xF); // apresenta informa??o consumida
+  }
+}
 
-void main(void){
+const int debouncing_time = 250;
+int last_Tick = 0;
+void IntButtonDebouncing()
+{
+
+  int getTick = osKernelGetTickCount();
+
+  if (getTick - last_Tick >= debouncing_time)
+  {
+    osSemaphoreRelease(ledSemaphore);
+    last_Tick = getTick;
+  }
+
+  GPIOIntClear(GPIO_PORTJ_BASE, GPIO_INT_PIN_0);
+}
+
+void configButton()
+{
+  SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOJ);
+  while (!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOJ))
+    ; // Aguarda final da habilita√ß√£o
+
+  GPIOPinTypeGPIOInput(GPIO_PORTJ_BASE, GPIO_PIN_0);
+  GPIOPadConfigSet(GPIO_PORTJ_BASE, GPIO_PIN_0, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);
+  GPIOIntDisable(GPIO_PORTJ_BASE, GPIO_INT_PIN_0);
+  GPIOIntTypeSet(GPIO_PORTJ_BASE, GPIO_PIN_0, GPIO_FALLING_EDGE);
+  GPIOIntRegister(GPIO_PORTJ_BASE, IntButtonDebouncing);
+  GPIOIntEnable(GPIO_PORTJ_BASE, GPIO_INT_PIN_0);
+  int i;
+  for (i = 0; i < 25000; i++)
+    ;
+}
+
+void main(void)
+{
   SystemInit();
   LEDInit(LED4 | LED3 | LED2 | LED1);
+  configButton();
 
   osKernelInitialize();
 
-  produtor_id = osThreadNew(produtor, NULL, NULL);
-  consumidor_id = osThreadNew(consumidor, NULL, NULL);
+  ledThread = osThreadNew(ledHandler, NULL, NULL);
+  ledSemaphore = osSemaphoreNew(BUFFER_SIZE, 0, NULL); // espa√ßos ocupados = 0
 
-  vazio_id = osSemaphoreNew(BUFFER_SIZE, BUFFER_SIZE, NULL); // espaÁos disponÌveis = BUFFER_SIZE
-  cheio_id = osSemaphoreNew(BUFFER_SIZE, 0, NULL); // espaÁos ocupados = 0
-  
-  if(osKernelGetState() == osKernelReady)
+  if (osKernelGetState() == osKernelReady)
     osKernelStart();
 
-  while(1);
+  while (1)
+    ;
 } // main
