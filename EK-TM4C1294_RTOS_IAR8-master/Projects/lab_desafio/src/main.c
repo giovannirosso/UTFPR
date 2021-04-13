@@ -18,25 +18,31 @@
 
 osThreadId_t ledThread1, ledThread2, ledThread3, ledThread4, mainThread;
 osMessageQueueId_t msgQueue1, msgQueue2, msgQueue3, msgQueue4;
+osMutexId_t mutex_id;
 uint32_t flagSelect, flags;
 
 typedef struct msg_s
 {
-  int duty;
+  bool set;
   uint8_t led;
 } msg_t;
 
 typedef struct
 {
   uint8_t led_state;
+  int duty;
 } ledStruct;
 
 void softwarePwm(uint8_t led, int dutyCycle)
 {
+  osMutexAcquire(mutex_id, osWaitForever);
   LEDOn(led);
+  osMutexRelease(mutex_id);
   osDelay(10 * (dutyCycle / 100.f));
 
+  osMutexAcquire(mutex_id, osWaitForever);
   LEDOff(led);
+  osMutexRelease(mutex_id);
   osDelay(10 * (1.f - dutyCycle / 100.f));
 }
 
@@ -48,7 +54,7 @@ void ledHandler(void *args)
   msg_t msg;
   int aux = 0;
   bool target;
-  int intensity = 50;
+  int intensity = 10;
 
   while (1)
   {
@@ -64,7 +70,15 @@ void ledHandler(void *args)
     if (status == osOK)
     {
       if (msg.led == led->led_state)
+      {
         target = true;
+        if (msg.set == true)
+        {
+          led->duty += 10;
+          if (led->duty > 100)
+            led->duty = 0;
+        }
+      }
       else
         target = false;
     }
@@ -72,18 +86,17 @@ void ledHandler(void *args)
     if (target)
     {
       int cont = osKernelGetTickCount();
-      if (cont - aux >= 1000)
+      if (cont - aux < 1000)
       {
-        softwarePwm(led->led_state, 100);
-        aux = cont;
+        softwarePwm(led->led_state, (float)led->duty);
       }
-      else
+      else if (cont - aux > 1500)
       {
-        softwarePwm(led->led_state, 0);
+        aux = cont;
       }
     }
     else
-      softwarePwm(led->led_state, 100);
+      softwarePwm(led->led_state, (float)led->duty);
   }
 }
 
@@ -92,7 +105,6 @@ void taskSelector(void *args)
   osStatus_t status;
   msg_t msg;
   int selectedLed = 16;
-  int selectedIntensity[4] = {50, 50, 50, 50};
 
   while (1)
   {
@@ -107,7 +119,7 @@ void taskSelector(void *args)
       if (selectedLed >= 1 && selectedLed <= 8)
       {
         msg_t msg = {
-            .duty = selectedIntensity[selectedLed],
+            .set = false, //selectedIntensity[selectedLed],
             .led = selectedLed,
         };
         // if (selectedLed == 1)
@@ -124,13 +136,13 @@ void taskSelector(void *args)
 
     else if (flagSelect & BUTTON_2)
     {
-      selectedIntensity[selectedLed] += 10;
-      if (selectedIntensity[selectedLed] > 100)
-        selectedIntensity[selectedLed] = 0;
+      // selectedIntensity[selectedLed] += 10;
+      // if (selectedIntensity[selectedLed] > 100)
+      //   selectedIntensity[selectedLed] = 0;
       if (selectedLed >= 1 && selectedLed <= 8)
       {
         msg_t msg = {
-            .duty = selectedIntensity[selectedLed],
+            .set = true,
             .led = selectedLed,
         };
         //  if (selectedLed == 1)
@@ -195,15 +207,19 @@ void main(void)
 
   ledStruct led_1;
   led_1.led_state = LED1;
+  led_1.duty = 10;
 
   ledStruct led_2;
   led_2.led_state = LED2;
+  led_2.duty = 10;
 
   ledStruct led_3;
   led_3.led_state = LED3;
+  led_3.duty = 10;
 
   ledStruct led_4;
   led_4.led_state = LED4;
+  led_4.duty = 10;
 
   configButton();
 
