@@ -131,7 +131,7 @@
 //   <i> Defines stack size for Idle thread.
 //   <i> Default: 256
 #ifndef OS_IDLE_THREAD_STACK_SIZE
-#define OS_IDLE_THREAD_STACK_SIZE   256
+#define OS_IDLE_THREAD_STACK_SIZE   512
 #endif
  
 //   <o>Idle Thread TrustZone Module Identifier
@@ -200,7 +200,7 @@
 //   <i> May be set to 0 when timers are not used.
 //   <i> Default: 256
 #ifndef OS_TIMER_THREAD_STACK_SIZE
-#define OS_TIMER_THREAD_STACK_SIZE  256
+#define OS_TIMER_THREAD_STACK_SIZE  512
 #endif
  
 //   <o>Timer Thread TrustZone Module Identifier

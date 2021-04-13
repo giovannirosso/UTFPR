@@ -42,12 +42,6 @@ void softwarePwm(uint8_t led, float dutyCycle)
 void ledHandler(void *args)
 {
   ledStruct *led = (ledStruct *)args;
-
-  int led_intensity = 0;
-  int selectedIntensity = 0;
-  int selectedLed = 0;
-  uint8_t isSelected = 0;
-
   osStatus_t status;
   msg_t msg;
   while (1)
@@ -56,40 +50,17 @@ void ledHandler(void *args)
 
     if (status == osOK)
     {
-      selectedLed = msg.led;
-      selectedIntensity = msg.duty;
-
-      if (selectedLed == 1 && led->led_state == LED1)
-        isSelected = 1;
-      else if (selectedLed == 2 && led->led_state == LED2)
-        isSelected = 1;
-      else if (selectedLed == 3 && led->led_state == LED3)
-        isSelected = 1;
-      else if (selectedLed == 4 && led->led_state == LED4)
-        isSelected = 1;
-      else
-        isSelected = 0;
+      msg.led;
+      msg.duty;
     }
-
-    if (isSelected)
-    {
-      // osDelay(500);
-      led_intensity = selectedIntensity;
-      softwarePwm(led->led_state, (float)50);
-      osDelay(1000);
-      osThreadYield();
-    }
-    else
-    {
-      softwarePwm(led->led_state, (float)100);
-    }
+    softwarePwm(msg.led, msg.duty);
   }
 }
 
+int selectedLed = 16;
+int selectedIntensity[4] = {50, 50, 50, 50};
 void taskSelector(void *args)
 {
-  int selectedLed = 0;
-  int intensity[4] = {50, 50, 50, 50};
   osStatus_t status;
   msg_t msg;
 
@@ -99,38 +70,34 @@ void taskSelector(void *args)
 
     if (flagSelect & BUTTON_1)
     {
-      selectedLed++;
-      if (selectedLed > 4)
-        selectedLed = 0;
+      selectedLed = (selectedLed >> 1);
+      if (selectedLed < 1)
+        selectedLed = 16;
 
-      if (selectedLed >= 1 && selectedLed <= 4)
+      if (selectedLed >= 1 && selectedLed <= 8)
       {
         msg_t msg = {
-            .duty = intensity[selectedLed],
+            .duty = selectedIntensity[selectedLed],
             .led = selectedLed,
         };
         osMessageQueuePut(msgQueue, &msg, NULL, osWaitForever);
-        // osMessageQueuePut(msgQueue, &msg, NULL, osWaitForever);
-        // osMessageQueuePut(msgQueue, &msg, NULL, osWaitForever);
-        // osMessageQueuePut(msgQueue, &msg, NULL, osWaitForever);
+        osThreadYield();
       }
     }
+
     else if (flagSelect & BUTTON_2)
     {
-      if (selectedLed >= 1 && selectedLed <= 4)
+      selectedIntensity[selectedLed] += 10;
+      if (selectedIntensity[selectedLed] > 100)
+        selectedIntensity[selectedLed] = 0;
+      if (selectedLed >= 1 && selectedLed <= 8)
       {
-        intensity[selectedLed] += 10;
-        if (intensity[selectedLed] > 100)
-          intensity[selectedLed] = 0;
-
         msg_t msg = {
-            .duty = intensity[selectedLed],
+            .duty = selectedIntensity[selectedLed],
             .led = selectedLed,
         };
         osMessageQueuePut(msgQueue, &msg, NULL, osWaitForever);
-        // osMessageQueuePut(msgQueue, &msg, NULL, osWaitForever);
-        // osMessageQueuePut(msgQueue, &msg, NULL, osWaitForever);
-        // osMessageQueuePut(msgQueue, &msg, NULL, osWaitForever);
+        osThreadYield();
       }
     }
   }
@@ -208,7 +175,7 @@ void main(void)
   flags = osThreadFlagsSet(mainThread, BUTTON_1); /* A */
   flags = osThreadFlagsSet(mainThread, BUTTON_2); /* C */
 
-  msgQueue = osMessageQueueNew(16, sizeof(msg_t), NULL); // Create message queue for up to 10 messages of type msg_t
+  msgQueue = osMessageQueueNew(4, sizeof(msg_t), NULL); // Create message queue for up to 10 messages of type msg_t
 
   if (osKernelGetState() == osKernelReady)
     osKernelStart();
