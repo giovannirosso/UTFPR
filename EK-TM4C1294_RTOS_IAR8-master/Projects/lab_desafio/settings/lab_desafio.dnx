@@ -49,7 +49,7 @@
         <MultiCoreRunAll>1</MultiCoreRunAll>
     </Simulator>
     <DebugChecksum>
-        <Checksum>4281644481</Checksum>
+        <Checksum>499691923</Checksum>
     </DebugChecksum>
     <LMIFTDIDriver>
         <LMIFTDIserialNo>0F00B524</LMIFTDIserialNo>
@@ -69,11 +69,7 @@
         <mode>0</mode>
     </DisassembleMode>
     <Breakpoints>
-        <Bp0>_ "STD_CODE" "{$PROJ_DIR$\src\main.c}.83.9" 1 0 0 0 "" 0 ""</Bp0>
-        <Bp1>_ "STD_CODE" "{$PROJ_DIR$\src\main.c}.74.7" 1 0 0 0 "" 0 ""</Bp1>
-        <Bp2>_ "STD_CODE" "{$PROJ_DIR$\src\main.c}.93.7" 1 0 0 0 "" 0 ""</Bp2>
-        <Bp3>_ "STD_CODE" "{$PROJ_DIR$\src\main.c}.99.9" 1 0 0 0 "" 0 ""</Bp3>
-        <Count>4</Count>
+        <Count>0</Count>
     </Breakpoints>
     <LogFile>
         <LoggingEnabled>_ 0</LoggingEnabled>

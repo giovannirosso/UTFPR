@@ -39,6 +39,7 @@ void softwarePwm(uint8_t led, float dutyCycle)
   osDelay(10 * (1.f - dutyCycle / 100.f));
 }
 
+int aux = 0;
 void ledHandler(void *args)
 {
   ledStruct *led = (ledStruct *)args;
@@ -53,7 +54,16 @@ void ledHandler(void *args)
       msg.led;
       msg.duty;
     }
-    softwarePwm(msg.led, msg.duty);
+    int cont = osKernelGetTickCount();
+    if (cont - aux >= 1000)
+    {
+      softwarePwm(msg.led, 100);
+      aux = cont;
+    }
+    else
+    {
+      softwarePwm(msg.led, 0);
+    }
   }
 }
 
@@ -72,7 +82,7 @@ void taskSelector(void *args)
     {
       selectedLed = (selectedLed >> 1);
       if (selectedLed < 1)
-        selectedLed = 16;
+        selectedLed = 8;
 
       if (selectedLed >= 1 && selectedLed <= 8)
       {
