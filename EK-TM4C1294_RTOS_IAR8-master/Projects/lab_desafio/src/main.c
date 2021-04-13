@@ -10,18 +10,19 @@
 #include "driverlib/sysctl.h"
 #include "driverlib/gpio.h"
 #include "driverlib/interrupt.h"
+#include "stdbool.h"
 
 #define BUFFER_SIZE 8
 #define BUTTON_1 0X00001
 #define BUTTON_2 0X00002
 
 osThreadId_t ledThread1, ledThread2, ledThread3, ledThread4, mainThread;
-osMessageQueueId_t msgQueue;
+osMessageQueueId_t msgQueue1, msgQueue2, msgQueue3, msgQueue4;
 uint32_t flagSelect, flags;
 
 typedef struct msg_s
 {
-  float duty;
+  int duty;
   uint8_t led;
 } msg_t;
 
@@ -30,7 +31,7 @@ typedef struct
   uint8_t led_state;
 } ledStruct;
 
-void softwarePwm(uint8_t led, float dutyCycle)
+void softwarePwm(uint8_t led, int dutyCycle)
 {
   LEDOn(led);
   osDelay(10 * (dutyCycle / 100.f));
@@ -39,40 +40,59 @@ void softwarePwm(uint8_t led, float dutyCycle)
   osDelay(10 * (1.f - dutyCycle / 100.f));
 }
 
-int aux = 0;
 void ledHandler(void *args)
 {
+
   ledStruct *led = (ledStruct *)args;
   osStatus_t status;
   msg_t msg;
+  int aux = 0;
+  bool target;
+  int intensity = 50;
+
   while (1)
   {
-    status = osMessageQueueGet(msgQueue, &msg, NULL, 0);
+    if (led->led_state == LED1)
+      status = osMessageQueueGet(msgQueue1, &msg, NULL, 0);
+    if (led->led_state == LED2)
+      status = osMessageQueueGet(msgQueue2, &msg, NULL, 0);
+    if (led->led_state == LED3)
+      status = osMessageQueueGet(msgQueue3, &msg, NULL, 0);
+    if (led->led_state == LED4)
+      status = osMessageQueueGet(msgQueue4, &msg, NULL, 0);
 
     if (status == osOK)
     {
-      msg.led;
-      msg.duty;
+      if (msg.led == led->led_state)
+        target = true;
+      else
+        target = false;
     }
-    int cont = osKernelGetTickCount();
-    if (cont - aux >= 1000)
+
+    if (target)
     {
-      softwarePwm(msg.led, 100);
-      aux = cont;
+      int cont = osKernelGetTickCount();
+      if (cont - aux >= 1000)
+      {
+        softwarePwm(led->led_state, 100);
+        aux = cont;
+      }
+      else
+      {
+        softwarePwm(led->led_state, 0);
+      }
     }
     else
-    {
-      softwarePwm(msg.led, 0);
-    }
+      softwarePwm(led->led_state, 100);
   }
 }
 
-int selectedLed = 16;
-int selectedIntensity[4] = {50, 50, 50, 50};
 void taskSelector(void *args)
 {
   osStatus_t status;
   msg_t msg;
+  int selectedLed = 16;
+  int selectedIntensity[4] = {50, 50, 50, 50};
 
   while (1)
   {
@@ -90,7 +110,14 @@ void taskSelector(void *args)
             .duty = selectedIntensity[selectedLed],
             .led = selectedLed,
         };
-        osMessageQueuePut(msgQueue, &msg, NULL, osWaitForever);
+        // if (selectedLed == 1)
+        osMessageQueuePut(msgQueue1, &msg, NULL, osWaitForever);
+        // else if (selectedLed == 2)
+        osMessageQueuePut(msgQueue2, &msg, NULL, osWaitForever);
+        // else if (selectedLed == 4)
+        osMessageQueuePut(msgQueue3, &msg, NULL, osWaitForever);
+        // else if (selectedLed == 8)
+        osMessageQueuePut(msgQueue4, &msg, NULL, osWaitForever);
         osThreadYield();
       }
     }
@@ -106,7 +133,14 @@ void taskSelector(void *args)
             .duty = selectedIntensity[selectedLed],
             .led = selectedLed,
         };
-        osMessageQueuePut(msgQueue, &msg, NULL, osWaitForever);
+        //  if (selectedLed == 1)
+        osMessageQueuePut(msgQueue1, &msg, NULL, osWaitForever);
+        //  else if (selectedLed == 2)
+        osMessageQueuePut(msgQueue2, &msg, NULL, osWaitForever);
+        //  else if (selectedLed == 4)
+        osMessageQueuePut(msgQueue3, &msg, NULL, osWaitForever);
+        // else if (selectedLed == 8)
+        osMessageQueuePut(msgQueue4, &msg, NULL, osWaitForever);
         osThreadYield();
       }
     }
@@ -185,7 +219,10 @@ void main(void)
   flags = osThreadFlagsSet(mainThread, BUTTON_1); /* A */
   flags = osThreadFlagsSet(mainThread, BUTTON_2); /* C */
 
-  msgQueue = osMessageQueueNew(4, sizeof(msg_t), NULL); // Create message queue for up to 10 messages of type msg_t
+  msgQueue1 = osMessageQueueNew(4, sizeof(msg_t), NULL); // Create message queue for up to 4 messages of type msg_t
+  msgQueue2 = osMessageQueueNew(4, sizeof(msg_t), NULL);
+  msgQueue3 = osMessageQueueNew(4, sizeof(msg_t), NULL);
+  msgQueue4 = osMessageQueueNew(4, sizeof(msg_t), NULL);
 
   if (osKernelGetState() == osKernelReady)
     osKernelStart();

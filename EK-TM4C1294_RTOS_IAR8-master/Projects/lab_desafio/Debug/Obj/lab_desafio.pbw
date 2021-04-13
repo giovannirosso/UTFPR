@@ -18289,6 +18289,696 @@
     "scope": null
   },
   {
+    "ID": "c:main.c@383@macro@BUFFER_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "BUFFER_SIZE",
+    "location": {
+      "column": "9",
+      "line": "15",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "BUFFER_SIZE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@406@macro@BUTTON_1",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "BUTTON_1",
+    "location": {
+      "column": "9",
+      "line": "16",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "BUTTON_1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@432@macro@BUTTON_2",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "BUTTON_2",
+    "location": {
+      "column": "9",
+      "line": "17",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "BUTTON_2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@ledThread1",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "ledThread1",
+    "location": {
+      "column": "14",
+      "line": "19",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "ledThread1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@ledThread2",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "ledThread2",
+    "location": {
+      "column": "26",
+      "line": "19",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "ledThread2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@ledThread3",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "ledThread3",
+    "location": {
+      "column": "38",
+      "line": "19",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "ledThread3",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@ledThread4",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "ledThread4",
+    "location": {
+      "column": "50",
+      "line": "19",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "ledThread4",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@mainThread",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "mainThread",
+    "location": {
+      "column": "62",
+      "line": "19",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "mainThread",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@msgQueue1",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "msgQueue1",
+    "location": {
+      "column": "20",
+      "line": "20",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "msgQueue1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@msgQueue2",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "msgQueue2",
+    "location": {
+      "column": "31",
+      "line": "20",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "msgQueue2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@msgQueue3",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "msgQueue3",
+    "location": {
+      "column": "42",
+      "line": "20",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "msgQueue3",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@msgQueue4",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "msgQueue4",
+    "location": {
+      "column": "53",
+      "line": "20",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "msgQueue4",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@flagSelect",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "flagSelect",
+    "location": {
+      "column": "10",
+      "line": "21",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "flagSelect",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@flags",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "flags",
+    "location": {
+      "column": "22",
+      "line": "21",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "flags",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@msg_s",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "msg_s",
+    "location": {
+      "column": "16",
+      "line": "23",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "members": [
+      {
+        "ID": "c:@S@msg_s@FI@duty",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "duty",
+        "location": {
+          "column": "7",
+          "line": "25",
+          "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+        },
+        "name": "duty",
+        "origin": "project_file",
+        "scope": "msg_s"
+      },
+      {
+        "ID": "c:@S@msg_s@FI@led",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "led",
+        "location": {
+          "column": "11",
+          "line": "26",
+          "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+        },
+        "name": "led",
+        "origin": "project_file",
+        "scope": "msg_s"
+      }
+    ],
+    "name": "msg_s",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@T@msg_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "struct msg_s",
+    "location": {
+      "column": "3",
+      "line": "27",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "msg_t",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@SA@ledStruct",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "29",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@ledStruct@FI@led_state",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "led_state",
+        "location": {
+          "column": "11",
+          "line": "31",
+          "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+        },
+        "name": "led_state",
+        "origin": "project_file",
+        "scope": "_anonymous_main_c_29_9"
+      }
+    ],
+    "name": "",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@ledStruct",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "struct ledStruct",
+    "location": {
+      "column": "3",
+      "line": "32",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "ledStruct",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@softwarePwm",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void softwarePwm(uint8_t, int)",
+    "location": {
+      "column": "6",
+      "line": "34",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "softwarePwm",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ledHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void ledHandler(void *)",
+    "location": {
+      "column": "6",
+      "line": "43",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "ledHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@949@F@ledHandler@led",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "led",
+    "location": {
+      "column": "14",
+      "line": "46",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "led",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@988@F@ledHandler@status",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "status",
+    "location": {
+      "column": "14",
+      "line": "47",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "status",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1010@F@ledHandler@msg",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "msg",
+    "location": {
+      "column": "9",
+      "line": "48",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "msg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1024@F@ledHandler@aux",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "aux",
+    "location": {
+      "column": "7",
+      "line": "49",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "aux",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1040@F@ledHandler@target",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "target",
+    "location": {
+      "column": "8",
+      "line": "50",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "target",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1056@F@ledHandler@intensity",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "intensity",
+    "location": {
+      "column": "7",
+      "line": "51",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "intensity",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1676@F@ledHandler@cont",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "cont",
+    "location": {
+      "column": "11",
+      "line": "76",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "cont",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@taskSelector",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void taskSelector(void *)",
+    "location": {
+      "column": "6",
+      "line": "92",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "taskSelector",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@2013@F@taskSelector@status",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "status",
+    "location": {
+      "column": "14",
+      "line": "94",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "status",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@2035@F@taskSelector@msg",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "msg",
+    "location": {
+      "column": "9",
+      "line": "95",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "msg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@2049@F@taskSelector@selectedLed",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "selectedLed",
+    "location": {
+      "column": "7",
+      "line": "96",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "selectedLed",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@2074@F@taskSelector@selectedIntensity",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "selectedIntensity",
+    "location": {
+      "column": "7",
+      "line": "97",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "selectedIntensity",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@2144@F@taskSelector@flagSelect",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "flagSelect",
+    "location": {
+      "column": "13",
+      "line": "101",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "flagSelect",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@2441@F@taskSelector@msg",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "msg",
+    "location": {
+      "column": "15",
+      "line": "111",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "msg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@3262@F@taskSelector@msg",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "msg",
+    "location": {
+      "column": "15",
+      "line": "134",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "msg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@debouncing_time",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "debouncing_time",
+    "location": {
+      "column": "11",
+      "line": "152",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "debouncing_time",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@last_Tick",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "last_Tick",
+    "location": {
+      "column": "5",
+      "line": "153",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "last_Tick",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@setPIN",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "setPIN",
+    "location": {
+      "column": "5",
+      "line": "154",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "setPIN",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ButtonHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void ButtonHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "155",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "ButtonHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@4167@F@ButtonHandler@getTick",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "getTick",
+    "location": {
+      "column": "7",
+      "line": "167",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "getTick",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@configButton",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void configButton(void)",
+    "location": {
+      "column": "6",
+      "line": "184",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "configButton",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void main(void)",
+    "location": {
+      "column": "6",
+      "line": "193",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@4828@F@main@led_1",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "led_1",
+    "location": {
+      "column": "13",
+      "line": "198",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "led_1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@4877@F@main@led_2",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "led_2",
+    "location": {
+      "column": "13",
+      "line": "201",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "led_2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@4926@F@main@led_3",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "led_3",
+    "location": {
+      "column": "13",
+      "line": "204",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "led_3",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@4975@F@main@led_4",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "led_4",
+    "location": {
+      "column": "13",
+      "line": "207",
+      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
+    },
+    "name": "led_4",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:iccarm_builtin.h@297@macro@__BUILTINS_INCLUDED",
     "What": "MacroDef",
     "defdec": "Def",
@@ -25452,626 +26142,6 @@
     },
     "name": "osMessageQueueDelete",
     "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@361@macro@BUFFER_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "BUFFER_SIZE",
-    "location": {
-      "column": "9",
-      "line": "14",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "BUFFER_SIZE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@384@macro@BUTTON_1",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "BUTTON_1",
-    "location": {
-      "column": "9",
-      "line": "15",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "BUTTON_1",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@410@macro@BUTTON_2",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "BUTTON_2",
-    "location": {
-      "column": "9",
-      "line": "16",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "BUTTON_2",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@ledThread1",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "ledThread1",
-    "location": {
-      "column": "14",
-      "line": "18",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "ledThread1",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@ledThread2",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "ledThread2",
-    "location": {
-      "column": "26",
-      "line": "18",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "ledThread2",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@ledThread3",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "ledThread3",
-    "location": {
-      "column": "38",
-      "line": "18",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "ledThread3",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@ledThread4",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "ledThread4",
-    "location": {
-      "column": "50",
-      "line": "18",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "ledThread4",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@mainThread",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "mainThread",
-    "location": {
-      "column": "62",
-      "line": "18",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "mainThread",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@msgQueue",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "msgQueue",
-    "location": {
-      "column": "20",
-      "line": "19",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "msgQueue",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@flagSelect",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "flagSelect",
-    "location": {
-      "column": "10",
-      "line": "20",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "flagSelect",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@flags",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "flags",
-    "location": {
-      "column": "22",
-      "line": "20",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "flags",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@msg_s",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "msg_s",
-    "location": {
-      "column": "16",
-      "line": "22",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "members": [
-      {
-        "ID": "c:@S@msg_s@FI@duty",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "duty",
-        "location": {
-          "column": "9",
-          "line": "24",
-          "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-        },
-        "name": "duty",
-        "origin": "project_file",
-        "scope": "msg_s"
-      },
-      {
-        "ID": "c:@S@msg_s@FI@led",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "led",
-        "location": {
-          "column": "11",
-          "line": "25",
-          "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-        },
-        "name": "led",
-        "origin": "project_file",
-        "scope": "msg_s"
-      }
-    ],
-    "name": "msg_s",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@T@msg_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "struct msg_s",
-    "location": {
-      "column": "3",
-      "line": "26",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "msg_t",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@SA@ledStruct",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "",
-    "location": {
-      "column": "9",
-      "line": "28",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "members": [
-      {
-        "ID": "c:@SA@ledStruct@FI@led_state",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "led_state",
-        "location": {
-          "column": "11",
-          "line": "30",
-          "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-        },
-        "name": "led_state",
-        "origin": "project_file",
-        "scope": "_anonymous_main_c_28_9"
-      }
-    ],
-    "name": "",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@ledStruct",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "struct ledStruct",
-    "location": {
-      "column": "3",
-      "line": "31",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "ledStruct",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@softwarePwm",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void softwarePwm(uint8_t, float)",
-    "location": {
-      "column": "6",
-      "line": "33",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "softwarePwm",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@aux",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "aux",
-    "location": {
-      "column": "5",
-      "line": "42",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "aux",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ledHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void ledHandler(void *)",
-    "location": {
-      "column": "6",
-      "line": "43",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "ledHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@909@F@ledHandler@led",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "led",
-    "location": {
-      "column": "14",
-      "line": "45",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "led",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@948@F@ledHandler@status",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "status",
-    "location": {
-      "column": "14",
-      "line": "46",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "status",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@970@F@ledHandler@msg",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "msg",
-    "location": {
-      "column": "9",
-      "line": "47",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "msg",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@1136@F@ledHandler@cont",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "cont",
-    "location": {
-      "column": "9",
-      "line": "57",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "cont",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@selectedLed",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "selectedLed",
-    "location": {
-      "column": "5",
-      "line": "70",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "selectedLed",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@selectedIntensity",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "selectedIntensity",
-    "location": {
-      "column": "5",
-      "line": "71",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "selectedIntensity",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@taskSelector",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void taskSelector(void *)",
-    "location": {
-      "column": "6",
-      "line": "72",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "taskSelector",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@1439@F@taskSelector@status",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "status",
-    "location": {
-      "column": "14",
-      "line": "74",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "status",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@1461@F@taskSelector@msg",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "msg",
-    "location": {
-      "column": "9",
-      "line": "75",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "msg",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@1497@F@taskSelector@flagSelect",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "flagSelect",
-    "location": {
-      "column": "13",
-      "line": "79",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "flagSelect",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@1795@F@taskSelector@msg",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "msg",
-    "location": {
-      "column": "15",
-      "line": "89",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "msg",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@2266@F@taskSelector@msg",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "msg",
-    "location": {
-      "column": "15",
-      "line": "105",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "msg",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@debouncing_time",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "debouncing_time",
-    "location": {
-      "column": "11",
-      "line": "116",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "debouncing_time",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@last_Tick",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "last_Tick",
-    "location": {
-      "column": "5",
-      "line": "117",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "last_Tick",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@setPIN",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "setPIN",
-    "location": {
-      "column": "5",
-      "line": "118",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "setPIN",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ButtonHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void ButtonHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "119",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "ButtonHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@2818@F@ButtonHandler@getTick",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "getTick",
-    "location": {
-      "column": "7",
-      "line": "131",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "getTick",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@configButton",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void configButton(void)",
-    "location": {
-      "column": "6",
-      "line": "148",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "configButton",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@main",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void main(void)",
-    "location": {
-      "column": "6",
-      "line": "157",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "main",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@3479@F@main@led_1",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "led_1",
-    "location": {
-      "column": "13",
-      "line": "162",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "led_1",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@3528@F@main@led_2",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "led_2",
-    "location": {
-      "column": "13",
-      "line": "165",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "led_2",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@3577@F@main@led_3",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "led_3",
-    "location": {
-      "column": "13",
-      "line": "168",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "led_3",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@3626@F@main@led_4",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "led_4",
-    "location": {
-      "column": "13",
-      "line": "171",
-      "path": "C:\\Users\\giova\\Desktop\\Repos\\UTFPR\\EK-TM4C1294_RTOS_IAR8-master\\Projects\\lab_desafio\\src\\main.c"
-    },
-    "name": "led_4",
-    "origin": "project_file",
     "scope": null
   },
   {
@@ -33594,7 +33664,7 @@
     "scope": null
   },
   {
-    "ID": "c:system_tm4c1294.h@1140@macro@SYSTEM_TM4C1294_H",
+    "ID": "c:system_TM4C1294.h@1140@macro@SYSTEM_TM4C1294_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SYSTEM_TM4C1294_H",
@@ -33608,7 +33678,7 @@
     "scope": null
   },
   {
-    "ID": "c:system_TM4C1294.h@1140@macro@SYSTEM_TM4C1294_H",
+    "ID": "c:system_tm4c1294.h@1140@macro@SYSTEM_TM4C1294_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SYSTEM_TM4C1294_H",
